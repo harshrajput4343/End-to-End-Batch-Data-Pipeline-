@@ -2,11 +2,10 @@ version: 2
 
 sources:
   - name: raw_data
-    database: "{{ env_var('GCP_PROJECT_ID') }}"
     schema: raw_data
     tables:
       - name: events
-        description: "Raw event logs ingested from CSV"
+        description: "Raw event logs ingested from CSV via S3 COPY"
         columns:
           - name: timestamp
             description: "The time the event occurred"
