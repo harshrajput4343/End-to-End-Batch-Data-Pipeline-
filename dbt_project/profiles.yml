@@ -1,0 +1,12 @@
+bigquery_profile:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: "{{ env_var('GCP_PROJECT_ID') }}"
+      dataset: analytics_data
+      threads: 4
+      keyfile: "{{ env_var('GCP_KEYFILE_PATH') }}"
+      location: US
+      priority: interactive
