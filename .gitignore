@@ -10,7 +10,7 @@ venv/
 # Data
 data/*.csv
 !data/raw_events.csv
-data/*.png
+# data/*.png # Allowed for README visual assets
 
 # dbt
 dbt_project/target/
