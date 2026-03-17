@@ -1,6 +1,5 @@
 # 🚀 Batch Data Pipeline: Airflow, S3, Redshift & dbt
 
-![Data Pipeline Architecture](./data/architecture.png)
 
 ## 📋 Table of Contents
 - [Project Overview](#-project-overview)
@@ -49,8 +48,11 @@ graph TD
 ---
 
 ## 📸 Pipeline in Action
-![Airflow DAG Success](./data/airflow_mockup.png)
-*Figure 1: Airflow Dashboard showing a successful execution of the 'batch_event_pipeline' DAG.*
+
+<!-- Add your own real Airflow screenshot here after running the pipeline -->
+<!-- ![Airflow DAG Success](./data/airflow_dag_screenshot.png) -->
+
+> 💡 **To add a real screenshot:** Run the pipeline locally with Airflow, take a screenshot of the DAG run in the Airflow UI, save it as `data/airflow_dag_screenshot.png`, and uncomment the image line above.
 
 ---
 
