@@ -100,12 +100,27 @@ cp .env.example .env
 # Edit .env with your GCP project ID and key path
 ```
 
-### 3. Install Dependencies
+### 3. Run with Docker (Recommended)
+This will set up Airflow and all its dependencies in containers.
+
+1.  **Initialize Airflow Application**:
+    ```bash
+    docker-compose up airflow-init
+    ```
+2.  **Start the Stack**:
+    ```bash
+    docker-compose up -d
+    ```
+3.  **Access Airflow Dashboard**: 
+    - Go to `http://localhost:8080`.
+    - Login: `airflow` / `airflow`.
+
+### 4. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run Locally (Manual)
+### 5. Run Locally (Manual)
 ```bash
 # Step 1: Ingest and Clean Data
 python etl/ingest.py
