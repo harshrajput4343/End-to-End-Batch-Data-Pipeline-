@@ -87,7 +87,20 @@ project/
 - AWS Account with S3 and Redshift enabled.
 - IAM Role with `AmazonS3ReadOnlyAccess` for Redshift.
 
-### 2. Run Locally
+### 3. Run with Docker (Recommended)
+This will start Airflow and all dependencies in containers.
+
+1.  **Initialize Airflow**:
+    ```bash
+    docker-compose up airflow-init
+    ```
+2.  **Start the Stack**:
+    ```bash
+    docker-compose up -d
+    ```
+3.  **Access Airflow**: Open `http://localhost:8080` (User: `airflow`, Pass: `airflow`).
+
+### 4. Run Locally (Manual)
 ```bash
 # Install dependencies
 pip install -r requirements.txt
